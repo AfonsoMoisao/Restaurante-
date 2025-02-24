@@ -1,0 +1,401 @@
+
+/* Resetando os estilos padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*font-family:  Garamond;*/
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;  
+   
+
+}
+
+
+/*          barra de navegação           */
+
+nav {
+    background-color: #333;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 5px 20px; 
+    height: 87px;
+    overflow: hidden; 
+
+    opacity: 0.95;
+}
+
+/* Estilizando o contêiner dos itens do menu */
+.nav-items-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilizando a lista não ordenada dentro da navegação */
+nav ul {
+    display: flex; 
+    list-style: none;
+    align-items: center; 
+    padding: 0; 
+    margin: 0; 
+
+}
+
+
+.nav-items {
+    display: flex; 
+    justify-content: center; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+/* Estilizando os itens da lista */
+nav ul li {
+    position: relative; /* Define a posição como relativa para permitir a posição absoluta dos submenus */
+    margin: 0 15px; /* Adiciona margem de 15px nas laterais dos itens da lista */
+}
+
+/* Estilizando o item que contém o logo */
+.logo-item {
+    display: flex; /* Usa flexbox para alinhar os itens dentro do logo-item */
+    align-items: center; /* Centraliza verticalmente o logo dentro do logo-item */
+}
+
+/* Estilizando a imagem do logo */
+.logoFastio {
+    height: 110px; /* Define a altura do logo */
+    width: 110%; /* Garante que a largura da logo ajuste automaticamente */
+    margin-top: 48%;
+}
+
+/* Estilizando os links de navegação */
+nav ul li a {
+    text-decoration: none; /* Remove a decoração padrão dos links (sublinhado) */
+    color: #F9B233; /* Define a cor do texto dos links como branco */
+    font-family: Arial, sans-serif; /* Define a fonte dos links */
+    padding: 10px; /* Adiciona espaçamento interno (padding) nos links */
+    transition: color 0.3s, transform 0.3s;
+    font-family: 'Georgia', serif;
+}
+nav ul li a:hover {
+    color: #fff; /* Altera a cor do texto ao passar o cursor */
+    transform: scale(1.1); /* Aumenta ligeiramente o tamanho do link */
+}
+
+
+
+
+
+/* Seção de Contactos */
+.empresa {
+    padding: 40px 20px;
+}
+
+.page h1 {
+    text-align: center;
+    color: #333;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.contact-box {
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+
+.contact-box .header {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #ffcc00;
+}
+
+.contact-box .content a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-box .content a:hover {
+    color: #ffcc00;
+}
+
+.contact-box .content ul.list-inline {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.contact-box .content ul.list-inline li {
+    display: inline-block;
+}
+
+.contact-box .content ul.list-inline li a img {
+    width: 24px; 
+    height: 24px;
+    filter: grayscale(100%); 
+    transition: filter 0.3s, transform 0.3s;
+}
+
+.contact-box .content ul.list-inline li a img:hover {
+    filter: grayscale(0%); /* volta a cor original */
+    transform: scale(1.1);
+}
+.contact-form-section {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-form-section .title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.contact-form .btn {
+    background-color: #ffcc00;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form .btn:hover {
+    background-color: #ffb400;
+}
+
+
+ 
+
+
+
+/*            FOOTER             */
+
+.footer {
+    background-color: #333; 
+    color: #fff;
+    padding: 60px 20px;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    margin-top: 15%;
+    
+    opacity: 0.95;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: flex-start; 
+}
+
+.footer-column {
+    flex: 1 1 200px;
+    min-width: 200px;
+
+    margin: 20px;
+    box-sizing: border-box; 
+}
+
+.footer h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #ffcc00; 
+}
+
+.footer p,
+.footer a {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #ffcc00; 
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-nav a {
+    margin-bottom: 10px;
+}
+
+.footer-social .social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-social a {
+    display: inline-block;
+}
+
+.footer-social img {
+    width: 28px;
+    height: 28px;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.footer-social a:hover img {
+    transform: scale(1.2);
+}
+
+.footer-column.footer-localizacao a img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.company {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    color: #ffcc00;
+    text-align: center;
+}
+
+.livro {
+    width: 120px; 
+    position: absolute;
+    bottom: 20px;
+    right: 50px;
+}   
+
+/* Responsividade  */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-column {
+        max-width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+    .footer-nav {
+        align-items: center;
+    }
+    .footer-social .social-icons {
+        justify-content: center;
+    }
+
+    .livro {
+        bottom: 10px;
+        right: 10px;
+        width: 40px;
+    }
+}
+
+
+
+
+
+
+
+
+/* Estilos para a ementa */
+
+.menu-container {
+    display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+        background-color: #fff;
+}
+
+.menu-item {
+    flex: 1 1 calc(25% - 40px);
+    margin: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+}
+
+.menu-item img {
+    /*width: 180px;
+    height: 140px;*/
+    width: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+/* Estilos para os títulos */
+h3 {
+    margin: 10px 0;
+    font-size: 22px;
+    color: #333;
+}
+
+/* Estilos para as descrições */
+p {
+    margin-bottom: 15px;
+    color: #666;
+    font-size: 16px;
+}
+
+/* Estilos para os preços */
+.price {
+    font-weight: bold;
+    color: #F9B233; 
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .menu-item {
+    flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-item {
+    flex: 1 1 100%;
+    }
+}

@@ -1,0 +1,318 @@
+/* Resetando os estilos padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+   
+}
+
+body{
+    /*background-color: #DCDCDC;*/
+        background-image: url('img/fundo6.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+}
+
+/* Estilizando a barra de navegação */
+nav {
+    background-color: #333;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 5px 20px; 
+    height: 87px;
+    overflow: hidden; 
+
+    opacity: 0.95;
+}
+
+.nav-items-container {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex; 
+    list-style: none;
+    align-items: center; 
+    padding: 0; 
+    margin: 0; 
+
+}
+
+
+.nav-items {
+    display: flex; 
+    justify-content: center; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+nav ul li {
+    position: relative; 
+    margin: 0 15px; 
+}
+
+.logo-item {
+    display: flex; 
+    align-items: center;
+}
+
+
+.logoFastio {
+    height: 110px;
+    width: 110%; 
+    margin-top: 48%;
+}
+
+nav ul li a {
+    text-decoration: none; 
+    color: #F9B233; 
+    padding: 10px;
+    transition: color 0.3s, transform 0.3s;
+
+    font-family: 'Georgia', serif;
+    font-size: 18px;
+    
+}
+nav ul li a:hover {
+    color: #fff;
+    transform: scale(1.1); 
+}
+
+
+
+
+/*            FOOTER             */
+
+.footer {
+    background-color: #333; 
+    color: #fff;
+    padding: 60px 20px;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    margin-top: 15%;
+    opacity: 0.95;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: flex-start; 
+}
+
+.footer-column {
+    flex: 1 1 200px;
+    min-width: 200px;
+
+    margin: 20px;
+    box-sizing: border-box; 
+    text-align: center; /* Centraliza o conteúdo das colunas */
+}
+
+.footer h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #ffcc00; 
+
+   
+}
+
+.footer p,
+.footer a {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #ffcc00; 
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-nav a {
+    margin-bottom: 10px;
+}
+
+.footer-social .social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-social a {
+    display: inline-block;
+}
+
+.footer-social img {
+    width: 28px;
+    height: 28px;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.footer-social a:hover img {
+    transform: scale(1.2);
+}
+
+.footer-column.footer-localizacao a img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.company {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    color: #ffcc00;
+    text-align: center;
+}
+
+.livro {
+    width: 120px; 
+    position: absolute;
+    bottom: 20px;
+    right: 50px;
+}   
+
+/*      resposivo a diferentes tamanhos de tela  */
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-column {
+        max-width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+    .footer-nav {
+        align-items: center;
+    }
+    .footer-social .social-icons {
+        justify-content: center;
+    }
+
+    .livro {
+        bottom: 10px;
+        right: 10px;
+        width: 40px;
+    }
+}
+
+
+
+
+
+/*POLITICA*/
+
+
+.empresa {
+    position: relative;
+    right: -5%;
+    margin-top: 35px;
+    margin-bottom: 50px; 
+    width: 88%;
+    background-color: rgb(241, 241, 241);
+    padding: 80px 40px;
+    border-radius: 10px;
+}
+
+.page img.logo {
+    position: absolute;
+    top: -20px;
+    right: 0;
+    width: 100px; 
+    height: auto;
+}
+
+.empresa2 {
+    position: relative;
+    right: -5%;
+    margin-top: 35px;
+    width: 88%;
+}
+
+.page {
+    position: relative;
+    color: #F9B233;
+}
+
+
+
+.termos {
+    position: relative;
+    right: -5%;
+    margin-top: 35px;
+    width: 88%;
+}
+
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: absolute;
+    z-index: 1;
+    top: 35.5%;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 6px 6px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.main {
+    margin-left: 20%;
+
+}
+
+.video-title { 
+    text-align: center; 
+    color: #F9B233; 
+    margin-top: 20px; 
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+.Jumpseller {
+    color: #F9B233;
+}
+
+
+
+
+
+

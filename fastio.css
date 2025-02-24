@@ -1,0 +1,706 @@
+/* Resetando os estilos padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+   
+}
+
+.time-container {
+    position: absolute;
+    top: 22px;
+    right: 10px;
+    font-size: 18px;
+    /*background-color: #333;*/
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    /*box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);*/
+}
+body{
+    /*background-color: #DCDCDC;*/
+        background-image: url('img/fundo6.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+}
+
+/* Estilizando a barra de navegação */
+nav {
+    background-color: #333;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 5px 20px; 
+    height: 87px;
+    overflow: hidden; 
+
+    opacity: 0.95;
+}
+
+.nav-items-container {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex; 
+    list-style: none;
+    align-items: center; 
+    padding: 0; 
+    margin: 0; 
+
+}
+
+
+.nav-items {
+    display: flex; 
+    justify-content: center; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+nav ul li {
+    position: relative; 
+    margin: 0 15px; 
+}
+
+.logo-item {
+    display: flex; 
+    align-items: center;
+}
+
+
+.logoFastio {
+    height: 110px;
+    width: 110%; 
+    margin-top: 48%;
+}
+
+nav ul li a {
+    text-decoration: none; 
+    color: #F9B233; 
+    padding: 10px;
+    transition: color 0.3s, transform 0.3s;
+
+    font-family: 'Georgia', serif;
+    font-size: 18px;
+    
+}
+nav ul li a:hover {
+    color: #fff;
+    transform: scale(1.1); 
+}
+
+
+
+
+
+
+
+
+/* Estilizando o contêiner das frases */
+
+.content-container {
+    background-color: rgba(37, 31, 31, 0.5); 
+
+
+}
+.content-container2 {
+    background-color: rgba(37, 31, 31, 0.5);
+    padding: 15%;
+
+}
+.frase-container {
+    padding: 30px;
+    margin-left: 140px; 
+    /*color: #683B10; */
+    font-family: 'Georgia', serif; 
+    line-height: 1.5; 
+    color: #F9B233;
+
+}
+
+.frase-container h1 {
+    font-size: 24px; 
+    margin-bottom: 20px; 
+    text-align: left; 
+    /*color: #683B10;*/
+    color: #F9B233;
+
+    font-family: 'Georgia', serif;
+
+
+}
+
+/* Estilizando o contêiner das frases */
+.frase2-container {
+    padding: 1px;
+    margin-left: 340px; 
+    color: #F9B233; 
+    font-family: 'Georgia', serif; 
+    line-height: 1.5; 
+}
+
+.frase2-container h1 {
+    font-size: 24px; 
+    margin-bottom: 20px; 
+    text-align: left; 
+    color: #F9B233; 
+
+    font-family: 'Georgia', serif;
+
+}
+
+
+
+
+.logo85 {
+    position: absolute; 
+    top: 15vh; 
+    right: 3%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo85 img {
+    max-width: 55%;
+    height: auto;
+}
+
+
+
+
+/* Estilizando o título "Bem Vindo" */
+.content-container2 h1 {
+    text-align: center;
+    color: #F9B233;
+    font-size: 48px; 
+    margin-bottom: 10px;
+
+    letter-spacing: 8px;
+    font-family: 'Georgia', serif;
+}
+
+/* Estilizando o subtítulo "Restaurante Fastio" */
+.content-container2 h2 {
+    text-align: center;
+    color: #fff; 
+    font-size: 32px;
+    margin-bottom: 20px;
+
+    letter-spacing: 10px;
+    font-family: 'Georgia', serif;
+}
+
+/* Linha branca abaixo do subtítulo */
+.content-container2 h2::after {
+    content: '';
+    display: block;
+    width: 500px; 
+    height: 3px; 
+    background-color: #fff; 
+    margin: 10px auto;
+}
+
+/* resposivo a diferentes tamanhos de tela */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .nav-items {
+        flex-direction: column;
+    }
+
+    .nav-items li {
+        margin: 10px 0;
+    }
+
+    .content-container {
+        flex-direction: column;
+    }
+
+    .frase-container, .frase2-container {
+        margin: 0;
+        text-align: center;
+    }
+
+    .logo85 {
+        position: static;
+        margin: 20px 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilizando as imagens da ementa */
+
+
+.image-gallery {
+    background-color: rgb(241, 241, 241);
+    padding: 40px 20px;
+    margin: 60px auto;
+    max-width: 99%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    margin-top:0px; 
+    border-radius: 10px;
+}
+
+.image-gallery h1 {
+    /*color: #683B10;*/
+    color: #F9B233;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px; 
+    font-family: 'Georgia', serif;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.image-overlay-container {
+    position: relative;
+    width: 250px;
+    margin: 10px;
+
+    /*overflow: hidden;*/
+}
+
+.image-overlay-container img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s, box-shadow 0.3s, opacity 0.3s;
+}
+
+.image-overlay-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); 
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 24px;
+    border-radius: 5px;
+
+    z-index: 1;
+    pointer-events: none;
+}
+
+.image-overlay-container:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0.7; 
+    border-radius: 5px;
+
+    z-index: 0;
+}
+
+.image-overlay-container:hover .overlay {
+    opacity: 1; 
+}
+
+/* Estilos para os links nas imagens */
+.overlay a {
+    color: inherit; 
+    text-decoration: none; 
+    font-family: 'Georgia', serif;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*              Sobre Fastio            */
+
+.footer2 {
+    position: relative;
+    background-color: rgb(241, 241, 241); 
+    color: #fff;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 80%;
+    padding: 40px 20px;
+    margin: 60px auto;
+    border-radius: 15px;
+}
+.footer2 h1 {
+    /*color: #683B10;*/
+    color: #F9B233;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px; 
+    font-family: 'Georgia', serif;
+}
+.footer2-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer2-column {
+    flex: 1 1 200px;
+    min-width: 200px;
+    margin: 20px;
+    box-sizing: border-box; 
+    position: relative;
+    overflow: hidden; 
+}
+
+.footer2-column img {
+    width: 100%;
+    height: auto;
+    transition: transform 3s, opacity 0.3s;
+    border-radius: 15px;
+}
+
+.footer2-column:hover img {
+    transform: scale(0.6);
+    opacity: 0.7;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50px; 
+    height: auto;
+}
+
+.footer2-column .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.9s;
+    font-size: 16px;
+    padding: 20px; 
+    text-align: center;
+    font-family: 'Georgia', serif; 
+    line-height: 1.6; 
+    margin: 10px; 
+    background: rgba(255, 255, 255, 0.8); 
+    border-radius: 10px; 
+}
+
+.footer2-column:hover .overlay {
+    opacity: 1;
+}
+
+.tab{
+    padding-left: 30px;
+}
+
+/* resposivo a diferentes tamanhos de tela */
+@media (max-width: 768px) {
+    .footer2-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer2-column {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*            FOOTER             */
+
+.footer {
+    background-color: #333; 
+    color: #fff;
+    padding: 60px 20px;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    margin-top: 15%;
+    opacity: 0.95;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: flex-start; 
+}
+
+.footer-column {
+    flex: 1 1 200px;
+    min-width: 200px;
+
+    margin: 20px;
+    box-sizing: border-box; 
+    text-align: center; /* Centraliza o conteúdo das colunas */
+}
+
+.footer h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #ffcc00; 
+
+   
+}
+
+.footer p,
+.footer a {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #ffcc00; 
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-nav a {
+    margin-bottom: 10px;
+}
+
+.footer-social .social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-social a {
+    display: inline-block;
+}
+
+.footer-social img {
+    width: 28px;
+    height: 28px;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.footer-social a:hover img {
+    transform: scale(1.2);
+}
+
+.footer-column.footer-localizacao a img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.company {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    color: #ffcc00;
+    text-align: center;
+}
+
+.livro {
+    width: 120px; 
+    position: absolute;
+    bottom: 20px;
+    right: 50px;
+}   
+
+/*      resposivo a diferentes tamanhos de tela  */
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-column {
+        max-width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+    .footer-nav {
+        align-items: center;
+    }
+    .footer-social .social-icons {
+        justify-content: center;
+    }
+
+    .livro {
+        bottom: 10px;
+        right: 10px;
+        width: 40px;
+    }
+}
+
+
+
+
+
+/*POLITICA*/
+
+
+.empresa {
+    position: relative;
+    right: -5%;
+    margin-top: 35px;
+    margin-bottom: 50px; 
+    width: 88%;
+    background-color: rgb(241, 241, 241);
+    padding: 80px 40px;
+    border-radius: 10px;
+}
+
+.page img.logo {
+    position: absolute;
+    top: -20px;
+    right: 0;
+    width: 100px; 
+    height: auto;
+}
+
+.empresa2 {
+    position: relative;
+    right: -5%;
+    margin-top: 35px;
+    width: 88%;
+}
+
+.page {
+    position: relative;
+    color: #F9B233;
+}
+
+
+
+.termos {
+    position: relative;
+    right: -5%;
+    margin-top: 35px;
+    width: 88%;
+}
+
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: absolute;
+    z-index: 1;
+    top: 35.5%;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 6px 6px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.main {
+    margin-left: 20%;
+
+}
+
+.video-title { 
+    text-align: center; 
+    color: #F9B233; 
+    margin-top: 20px; 
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+.Jumpseller {
+    color: #F9B233;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
